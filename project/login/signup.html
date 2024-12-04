@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Club Management System - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+            background: url('signuppic2.jpg') no-repeat center right/cover;
+            color: #fff;
+        }
+        .signup-container {
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            padding: 20px 30px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        .signup-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #fff;
+        }
+        .signup-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .signup-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28A745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .signup-container button:hover {
+            background-color: #218838;
+        }
+        .signup-container .login {
+            margin-top: 15px;
+        }
+        .signup-container .login a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .signup-container .login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form action = "signup.php" method="POST">
+          <input type = "text" name = "fullname" placeholder="Enter your Full name " required><br><br>
+          <input type = "email" name = "email" placeholder="Enter your email " required><br><br>
+          <input type = "text" name = "password" placeholder="Enter your password " required><br><br>
+          <button type = "submit" name = "submit" >Confirm</button>
+        </form>    
+        <div class="login">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+        <div class="footer">
+            &copy; Football Club Management System
+        </div>
+    </div>
+</body>
+</html>
